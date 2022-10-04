@@ -22,8 +22,8 @@ BMA *sensor;
 
 
 
-const char* ssid = "Brandon's iPhone"; // phone hotspot name
-const char* password = "bpevans99"; // phone hotspot password
+const char* ssid = "NETGEAR18"; // phone hotspot name
+const char* password = "shinycello16"; // phone hotspot password
 
 String mac_address;
 
@@ -182,7 +182,7 @@ void setup() {
   mac_address = "test";
   delay(500);
   // server address, port and URL
-  webSocket.begin("192.168.2.9", 3000, "/");
+  webSocket.begin("192.168.1.17", 3000, "/");
 
   // event handler
   webSocket.onEvent(webSocketEvent);
